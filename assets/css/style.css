@@ -1,0 +1,14 @@
+body {
+    background-color: lightyellow;
+}
+
+.game-area {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: lightsalmon;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
