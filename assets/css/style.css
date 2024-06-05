@@ -1,4 +1,13 @@
+/*google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+header {
+    font-family: "Inconsolata",serif;
+    text-align: center;
+}
+
 body {
+    font-family: "Inconsolata", serif;
     background-color: lightyellow;
 }
 
