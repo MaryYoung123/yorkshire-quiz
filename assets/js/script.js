@@ -14,7 +14,19 @@ const questions = [{
         question: "How many gold medals were won by athletes from Yorkshire at the 2012 Olympics?",
         choices: ["52", "74", "87"],
         correct: 1
-    }
+    },
+
+    {
+        question: " Which date is designated Yorkshire day?",
+        choices: ["February 14th", "March 30th", "August 1st"],
+        },
+
+    {
+        question: " In which Yorkshire city were the Kaiser Chiefs formed?",
+        choices: ["Leeds", "Bradford", "York"],
+        correct: 0
+    },
+
 
 
 ];
