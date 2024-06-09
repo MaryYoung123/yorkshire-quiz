@@ -6,12 +6,18 @@ header {
   font-family: "Inconsolata", serif;
   text-align: center;
 }
+main {
+  flex: 1 0 auto;
+}
 
 body {
   position: relative;
   background: url("/assets/images/yorkshire-landscape.jpg") center no-repeat fixed;
    background-color: lightgreen;
   font-family: "Inconsolata", serif;
+  min-height: 100vh;
+  display: flex;
+    flex-direction: column;
 
 }
 
@@ -57,4 +63,24 @@ font-size: larger;
 
 .choice:hover {
   background-color: #0f6a0582;
+}
+
+footer {
+  background-color: #0f6a05;
+  text-align: center;
+  margin-top: auto;
+  font-size: larger;
+}
+#social-networks {
+  font-size: x-small;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #91ed87;
 }
