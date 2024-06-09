@@ -54,7 +54,7 @@ function checkAnswer(selected) {
         feedback.textContent = "Correct!";
         correctAnswers++;
     } else {
-        feedback.textContent = "Incorrect! the correct answer is " + choices[index].correct ;
+        feedback.textContent = `Incorrect! the correct answer is ${currentQuestion.correct}`  ;
     }
 
     setTimeout(() => {
