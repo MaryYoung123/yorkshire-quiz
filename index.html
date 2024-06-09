@@ -4,36 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A yorkshire quiz to test your knowledge of yorkshire">
-  <meta name="keywords" content="yorkshire, quiz, game, multiple choice,">
+    <meta name="keywords" content="yorkshire, quiz, game, multiple choice,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 
     <title>Yorkshire quiz</title>
 </head>
 
-<body >
-    
+<body>
+
     <header class="introduction">
         <h1>How well do you know Yorkshire?</h1>
         <h2>Take this short quiz to find out!</h2>
     </header>
 
+
     <div class="game-area">
-        <div id="question-text"></div>
-        <div id="options">
-            <button class="choice" onclick="checkAnswer(0)"></button>
-            <button class="choice" onclick="checkAnswer(1)"></button>
-            <button class="choice" onclick="checkAnswer(2)"></button>
+        <div id="start">
+            <h2>ey up, what's your name?</h2>
+            <form id="new-user">
+                <label id="message" for="username">Enter a username to start the game</label>
+                <input type="text" id="username" name="username" placeholder="username" maxlength="15" required>
+                <button class="btn btn--full" type="submit" id="start-game">Start</button>
+            </form>
+
         </div>
-        
-            <p id="feedback"></p>
+        <div id="quiz">
+            <div id="question-text"></div>
+            <div id="options">
+                <button class="choice" onclick="checkAnswer(0)"></button>
+                <button class="choice" onclick="checkAnswer(1)"></button>
+                <button class="choice" onclick="checkAnswer(2)"></button>
+            </div>
+        </div>
+
+        <p id="feedback"></p>
     </div>
-    
+
     <footer>
 
     </footer>
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
