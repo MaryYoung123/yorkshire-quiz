@@ -53,7 +53,7 @@ function checkAnswer(selected) {
         feedback.textContent = "Correct!";
         correctAnswers++;
     } else {
-        feedback.textContent = "Incorrect!";
+        feedback.textContent = "Incorrect! the correct answer is " +correctAnswers.textContent;
     }
 
     setTimeout(() => {
