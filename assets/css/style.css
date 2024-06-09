@@ -3,42 +3,51 @@
 
 
 header {
-    font-family: "Inconsolata",serif;
-    text-align: center;
+  font-family: "Inconsolata", serif;
+  text-align: center;
 }
 
 body {
-    font-family: "Inconsolata", serif;
-   background-image: url("yorkshire.jpeg");
+  position: relative;
+  background-image: url("/assets/images/yorkshire-landscape.jpg");
+   background-color: lightgreen;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inconsolata", serif;
+
 }
 
+
+
 .game-area {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2em;
-    background-color: lightsalmon;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  opacity: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: lightsalmon;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .options {
-    display: flex;
-  }
-  
-  .choice {
-    font-size: 1em;
-    display: block;
-    margin: 5px 5px;
-    padding: .5em .75em;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .choice:hover {
-    background-color: #2980b9;
-  }
+  display: flex;
+}
+
+.choice {
+  font-size: 1em;
+  display: block;
+  margin: 5px 5px;
+  padding: .5em .75em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: #2980b9;
+}
