@@ -9,10 +9,8 @@ header {
 
 body {
   position: relative;
-  background-image: url("/assets/images/yorkshire-landscape.jpg");
+  background: url("/assets/images/yorkshire-landscape.jpg") center no-repeat fixed;
    background-color: lightgreen;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: "Inconsolata", serif;
 
 }
@@ -21,19 +19,28 @@ body {
 
 .game-area {
   position: relative;
-  opacity: 100%;
+ 
   box-sizing: border-box;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   padding: 2em;
-  background-color: lightsalmon;
+  background-color: lightgreen;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.options {
+#question-text {
+font-size: larger;
+}
+#options {
   display: flex;
+  flex-direction: column;
+}
+
+#feedback {
+  font-size: larger;
 }
 
 .choice {
@@ -41,7 +48,7 @@ body {
   display: block;
   margin: 5px 5px;
   padding: .5em .75em;
-  background-color: #3498db;
+  background-color: #0f6a05;
   color: white;
   border: none;
   border-radius: 5px;
@@ -49,5 +56,5 @@ body {
 }
 
 .choice:hover {
-  background-color: #2980b9;
+  background-color: #0f6a0582;
 }
