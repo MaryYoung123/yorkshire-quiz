@@ -19,6 +19,7 @@ const questions = [{
     {
         question: " Which date is designated Yorkshire day?",
         choices: ["February 14th", "March 30th", "August 1st"],
+        correct: 2
         },
 
     {
@@ -53,7 +54,7 @@ function checkAnswer(selected) {
         feedback.textContent = "Correct!";
         correctAnswers++;
     } else {
-        feedback.textContent = "Incorrect! the correct answer is " +correctAnswers.textContent;
+        feedback.textContent = "Incorrect! the correct answer is " + choices[index].correct ;
     }
 
     setTimeout(() => {
