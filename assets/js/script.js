@@ -1,6 +1,3 @@
-
-/*Questions for quiz*/
-
 const questions = [
     
     
@@ -9,61 +6,35 @@ const questions = [
         choices: ["June", "July", "August"],
         correct: 1
     },
-
     {
         question: "Which of the Yorkshire three peaks are the highest? ",
         choices: ["Penyghent", "Whernside", "Ingleborough"],
         correct: 1
     },
-
     {
         question: "How many gold medals were won by athletes from Yorkshire at the 2012 Olympics?",
         choices: ["52", "74", "87"],
         correct: 1
     },
-
     {
         question: " Which date is designated Yorkshire day?",
         choices: ["February 14th", "March 30th", "August 1st"],
         correct: 2
         },
-
     {
         question: " In which Yorkshire city were the Kaiser Chiefs formed?",
         choices: ["Leeds", "Bradford", "York"],
         correct: 0
     },
-
-
-
 ];
-
-const username = document.getElementById("username");
+const username = sessionStorage.getItem('playerName');
 const start = document.getElementById("start"); 
 const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let correctAnswers = 0;
-
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById("start");
-    
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-  
-      const message = document.getElementById("message");
-  
-      if (username.value === " ") {      
-        message.innerText = "Enter a valid username";
-        message.setAttribute('class', 'message');
-      } else {
-        message.innerText = 'Enter a username to start the game';
-        message.removeAttribute('class', 'message');
-        showQuestion();
-      }    
-    })  
-});  
-
-function showQuestion() {
+alert(`Welcome to the quiz ${username}`);
+    function showQuestion() {
    
     start.style.display = 'none';
     quiz.style.display = 'block'; 
@@ -71,18 +42,13 @@ function showQuestion() {
     
     const questionText = document.getElementById("question-text");
     questionText.textContent = questions[currentQuestion].question;
-
     const choices = document.querySelectorAll(".choice");
     choices.forEach((choice, index) => {
         choice.textContent = questions[currentQuestion].choices[index];
     });
-
     const feedback = document.getElementById("feedback");
     feedback.textContent = "";
 }
-
-/*Feedback*/
-
 function checkAnswer(selected) {
     const feedback = document.getElementById("feedback");
     let currentCorrectAnswer = questions[currentQuestion].correct
@@ -92,10 +58,8 @@ function checkAnswer(selected) {
     } else {
         feedback.textContent = `Incorrect! the correct answer is ${questions[currentQuestion].choices[currentCorrectAnswer]}`  ;
     }
-
     setTimeout(() => {
         currentQuestion++;
-
         if (currentQuestion < questions.length) {
             showQuestion();
         } else {
@@ -105,5 +69,14 @@ function checkAnswer(selected) {
         }
     }, 2000);
 }
-
 showQuestion();
+});
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A yorkshire quiz to test your knowledge of yorkshire">
+    <meta name="keywords" content="yorkshire, quiz, game, multiple choice,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <title>Yorkshire quiz</title>
+</head>
+
+<body>
+    <!--Introduction-->
+
+    <header class="introduction">
+        <h1>How well do you know Yorkshire?</h1>
+        <h2>Take this short quiz to find out!</h2>
+    </header>
+
+    
+
+    <!--Quiz questions area-->
+
+    <div class="game-area">
+        <div id="quiz">
+            <div id="question-text"></div>
+            <div id="options">
+                <button class="choice" onclick="checkAnswer(0)"></button>
+                <button class="choice" onclick="checkAnswer(1)"></button>
+                <button class="choice" onclick="checkAnswer(2)"></button>
+            </div>
+        </div>
+
+        <p id="feedback"></p>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p><strong>Follow us on our socials for more crazy quizzing!</strong></p>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+
+
+    </footer>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
