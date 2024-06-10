@@ -1,11 +1,15 @@
 /*google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+* {
+  font-family: "Inconsolata", serif;
+}
 
 header {
-  font-family: "Inconsolata", serif;
+
   text-align: center;
 }
+
 main {
   flex: 1 0 auto;
 }
@@ -13,23 +17,21 @@ main {
 body {
   position: relative;
   background: url("/assets/images/yorkshire-landscape.jpg") center no-repeat fixed;
-   background-color: lightgreen;
-  font-family: "Inconsolata", serif;
+  background-color: lightgreen;
   min-height: 100vh;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 
 }
 
-#quiz {
-  display: none;
-}
+
+
 #username {
   position: relative;
   box-sizing: border-box;
   background-color: lightgreen;
   width: 100%;
-  max-width:600px;
+  max-width: 600px;
   margin: auto;
   padding: 2em;
   border-radius: 20px;
@@ -38,19 +40,35 @@ body {
 }
 
 #start-button {
-background-color: #0f6a05;
-border-radius: 20px;
-border: none;
-color: white;
-padding: 1em;
+
+  background-color: #0f6a05;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 1em;
 }
 
 #start-button:hover {
-  background-color:#0f6a0582;
+  background-color: #0f6a0582;
 }
+
+#player-name-input {
+
+  background-color: #0f6a05;
+  border-radius: 20px;
+  border: none;
+  padding: 1em;
+  color: white;
+}
+
+::placeholder {
+
+  color: white;
+}
+
 .game-area {
   position: relative;
- 
+
   box-sizing: border-box;
   width: 100%;
   max-width: 600px;
@@ -63,8 +81,9 @@ padding: 1em;
 }
 
 #question-text {
-font-size: larger;
+  font-size: larger;
 }
+
 #options {
   display: flex;
   flex-direction: column;
@@ -98,6 +117,7 @@ footer {
   margin-top: auto;
   font-size: larger;
 }
+
 #social-networks {
   font-size: x-small;
   text-align: center;
