@@ -24,8 +24,30 @@ body {
 #quiz {
   display: none;
 }
+#username {
+  position: relative;
+  box-sizing: border-box;
+  background-color: lightgreen;
+  width: 100%;
+  max-width:600px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+#start-button {
+background-color: #0f6a05;
+border-radius: 20px;
+border: none;
+color: white;
+padding: 1em;
+}
 
+#start-button:hover {
+  background-color:#0f6a0582;
+}
 .game-area {
   position: relative;
  
