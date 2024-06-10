@@ -21,6 +21,9 @@ body {
 
 }
 
+#quiz {
+  display: none;
+}
 
 
 .game-area {

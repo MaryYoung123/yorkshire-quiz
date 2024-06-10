@@ -35,14 +35,14 @@ const questions = [
 
 ];
 
-const username = document.getElementById('username');
-const start = document.getElementById('start');
-const quiz = document.getElementById('quiz');
+const username = document.getElementById("username");
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let correctAnswers = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('new-user');
+    const form = document.getElementById("start");
     
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -93,7 +93,7 @@ function checkAnswer(selected) {
         if (currentQuestion < questions.length) {
             showQuestion();
         } else {
-            const quizContainer = document.querySelector(".game-area");
+            const quizContainer = document.querySelector("start");
             quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
         }
     }, 2000);
