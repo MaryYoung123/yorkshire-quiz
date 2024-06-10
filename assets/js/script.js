@@ -28,27 +28,9 @@ const questions = [
     },
 ];
 const username = sessionStorage.getItem('playerName');
-const start = document.getElementById("start"); 
 const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let correctAnswers = 0;
-document.addEventListener('DOMContentLoaded', function () {
-alert(`Welcome to the quiz ${username}`);
-    function showQuestion() {
-   
-    start.style.display = 'none';
-    quiz.style.display = 'block'; 
-    
-    
-    const questionText = document.getElementById("question-text");
-    questionText.textContent = questions[currentQuestion].question;
-    const choices = document.querySelectorAll(".choice");
-    choices.forEach((choice, index) => {
-        choice.textContent = questions[currentQuestion].choices[index];
-    });
-    const feedback = document.getElementById("feedback");
-    feedback.textContent = "";
-}
 function checkAnswer(selected) {
     const feedback = document.getElementById("feedback");
     let currentCorrectAnswer = questions[currentQuestion].correct
@@ -63,14 +45,35 @@ function checkAnswer(selected) {
         if (currentQuestion < questions.length) {
             showQuestion();
         } else {
-            
-           const gameArea = document.querySelector(".game-area"); 
+            const gameArea = document.querySelector(".game-area"); 
             gameArea.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
         }
     }, 2000);
 }
-showQuestion();
+function showQuestion() {
+    quiz.style.display = 'block'; 
+    
+    const questionText = document.getElementById("question-text");
+    questionText.textContent = questions[currentQuestion].question;
+    const choices = document.querySelectorAll(".choice");
+    choices.forEach((choice, index) => {
+        choice.textContent = questions[currentQuestion].choices[index];
+    });
+    const feedback = document.getElementById("feedback");
+    feedback.textContent = "";
+}
+document.addEventListener('DOMContentLoaded', function () {
+    alert(`Welcome to the quiz ${username}`);
+    showQuestion();
 });
+
+
+
+
+
+
+
+
 
 
 
