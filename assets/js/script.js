@@ -36,7 +36,7 @@ const questions = [
 ];
 
 const username = document.getElementById("username");
-const start = document.getElementById("start");
+const start = document.getElementById("start"); 
 const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let correctAnswers = 0;
@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
   
-      const message = document.getElementById('message');
+      const message = document.getElementById("message");
   
       if (username.value === " ") {      
-        message.innerText = 'Enter a valid username';
+        message.innerText = "Enter a valid username";
         message.setAttribute('class', 'message');
       } else {
         message.innerText = 'Enter a username to start the game';
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function showQuestion() {
    
-    start.style.display = 'none'; 
+    start.style.display = 'none';
     quiz.style.display = 'block'; 
     
     
@@ -93,8 +93,9 @@ function checkAnswer(selected) {
         if (currentQuestion < questions.length) {
             showQuestion();
         } else {
-            const quizContainer = document.querySelector("start");
-            quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
+            
+           const gameArea = document.querySelector(".game-area"); 
+            gameArea.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
         }
     }, 2000);
 }

@@ -24,28 +24,30 @@
         <h2>Take this short quiz to find out!</h2>
     </header>
 
+    <div class="start-game">
 
+        <div id="start">
+            <h2>ey up, what's your name?</h2>
+            <form id="new-user">
+                <label id="message" for="username">Enter a username to start the game</label>
+                <input type="text" id="username" name="username" placeholder="username" maxlength="15" required>
+                <button class="btn btn--full" type="submit" id="start-game">Start</button>
+            </form>
 
-    <div id="start" class="game-area">
-        <h2>ey up, what's your name?</h2>
-        <form id="new-user">
-            <label id="message" for="username">Enter a username to start the game</label>
-            <input type="text" id="username" name="username" placeholder="username" maxlength="15" required>
-            <button class="btn btn--full" type="submit" id="start-game">Start</button>
-        </form>
-
-    </div>
-
-    <div class="game-area" id="quiz">
-        <div id="question-text"></div>
-        <div id="options">
-            <button class="choice" onclick="checkAnswer(0)"></button>
-            <button class="choice" onclick="checkAnswer(1)"></button>
-            <button class="choice" onclick="checkAnswer(2)"></button>
         </div>
     </div>
 
-    <p id="feedback"></p>
+    <div class="game-area">
+        <div id="quiz">
+            <div id="question-text"></div>
+            <div id="options">
+                <button class="choice" onclick="checkAnswer(0)"></button>
+                <button class="choice" onclick="checkAnswer(1)"></button>
+                <button class="choice" onclick="checkAnswer(2)"></button>
+            </div>
+        </div>
+
+        <p id="feedback"></p>
     </div>
 
     <footer>
@@ -72,6 +74,8 @@
                     <i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
+
+
     </footer>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
