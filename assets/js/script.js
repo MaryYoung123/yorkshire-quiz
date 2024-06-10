@@ -1,3 +1,6 @@
+
+/*Questions for quiz*/
+
 const questions = [
     
     
@@ -78,13 +81,16 @@ function showQuestion() {
     feedback.textContent = "";
 }
 
+/*Feedback*/
+
 function checkAnswer(selected) {
     const feedback = document.getElementById("feedback");
+    let currentCorrectAnswer = questions[currentQuestion].correct
     if (selected === questions[currentQuestion].correct) {
         feedback.textContent = "Correct!";
         correctAnswers++;
     } else {
-        feedback.textContent = `Incorrect! the correct answer is ${currentQuestion.correct}`  ;
+        feedback.textContent = `Incorrect! the correct answer is ${questions[currentQuestion].choices[currentCorrectAnswer]}`  ;
     }
 
     setTimeout(() => {
