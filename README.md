@@ -85,4 +85,15 @@ Function with the largest signature take 2 arguments, while the median is 0.
 Largest function has 7 statements in it, while the median is 7.
 
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+* In the GitHub repository, navigate to the Settings tab
+* From the source section drop-down menu, select the Master Branch
+* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+* The live link can be found here - [Yorkshire quiz](https://maryyoung123.github.io/yorkshire-quiz/)
+
+
   
