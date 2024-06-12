@@ -86,6 +86,15 @@ Largest function has 7 statements in it, while the median is 7.
 
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
+## Bugs
+### Fixed bugs
+* After deployment, I discovered that my background image wasn't working. I realised that I had typed the file path to the image wrong.
+* To fix this, I fixed my file path to the image with this code.  `url("../images/yorkshire-landscape.jpg")`
+
+### Unfixed bugs
+ * No known unfixed bugs.
+
+
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
