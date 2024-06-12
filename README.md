@@ -56,10 +56,33 @@ Upon entering the site, users are asked to provide a username. When a username i
 ### Validator testing
 
 * HTML
-  * No errors were returned when passing through the official W3C validator
+  * No errors were returned when passing through the official [w3c validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-maryyoung12-yorkshirequ-z0v9cqgnooi.ws-eu114.gitpod.io%2F)
 * CSS
-  * No errors were found when passing through the official (Jigsaw) validator
+  * No errors were found when passing through the [official (Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-maryyoung12-yorkshirequ-z0v9cqgnooi.ws-eu114.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 * JavaScript
-  * No errors were found when passing through the official Jshint validator
+  * No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+
 The following metrics were returned:
+
+#### player.js
+
+CONFIGURE
+Metrics
+There are 3 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 7 statements in it, while the median is 2.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+#### script.js 
+
+There are 5 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 7 statements in it, while the median is 7.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
   
