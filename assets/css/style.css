@@ -16,7 +16,7 @@ main {
 
 body {
   position: relative;
-  background: url("/assets/images/yorkshire-landscape.jpg") center no-repeat fixed;
+  background: url("assets/images/yorkshire-landscape.jpg") center no-repeat fixed;
   background-color: lightgreen;
   min-height: 100vh;
   display: flex;
