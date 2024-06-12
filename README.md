@@ -35,4 +35,31 @@ Upon entering the site, users are asked to provide a username. When a username i
 
   ![Screenshot of footer](assets/images/screenshot-footer.png)
 
+### Features left to implement
+
+* In the future, I would like to create a second user feature, so two friends can play and compete.
+
+## Testing
+
+* I tested this quiz in different browsers, including Safari, Firefox, and Chrome.
+
+* I confirmed that the game results are always correct.
+
+* I confirmed that the quiz is clear to understand and easy to use.
+
+* I confirmed that the colors and fonts used are accessible and clear.
+
+* I confirmed that the site is fully responsive, and looks good and functions on all screen sizes.
+
+![Screenshot of lighthouse scores](assets/images/screenshot-lighthouse.png)
+
+### Validator testing
+
+* HTML
+  * No errors were returned when passing through the official W3C validator
+* CSS
+  * No errors were found when passing through the official (Jigsaw) validator
+* JavaScript
+  * No errors were found when passing through the official Jshint validator
+The following metrics were returned:
   
