@@ -1,3 +1,5 @@
+//Questions
+
 const questions = [
 
 
@@ -27,10 +29,13 @@ const questions = [
         correct: 0
     },
 ];
+
 const username = sessionStorage.getItem('playerName');
 const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let correctAnswers = 0;
+
+//Check answer
 
 function checkAnswer(selected) {
     const feedback = document.getElementById("feedback");
@@ -54,6 +59,8 @@ function checkAnswer(selected) {
         }
     }, 2000);
 }
+
+//Show question
 
 function showQuestion() {
     quiz.style.display = 'block';
