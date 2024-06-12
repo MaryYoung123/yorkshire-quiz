@@ -96,4 +96,16 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * The live link can be found here - [Yorkshire quiz](https://maryyoung123.github.io/yorkshire-quiz/)
 
 
+## Credits
+
+The font used was sourced from [Google Fonts](https://fonts.google.com/)
+
+The Background image was sourced from [Pexels](https://www.pexels.com/)
+
+Advice over multiple aspects of my code has been gained from [w3Schools](https://www.w3schools.com/)
+
+
+
+
+
   
